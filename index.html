@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <h1>Tic Tac Toe</h1>
+        <ul id="auth-links">
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+        <ul id="user-links" style="display: none;">
+          <li><a href="game.html">Play Game</a></li>
+          <li><a href="leaderboard.html">Leaderboard</a></li>
+          <li><a href="history.html">My History</a></li>
+          <li><span id="user-display"></span></li>
+          <li><a href="#" id="logout-btn">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="card" style="margin-top: 50px;">
+      <h2 class="text-center">Welcome to Tic Tac Toe!</h2>
+      <p class="text-center">A fun and interactive game where you can play against the computer or challenge your friends.</p>
+      
+      <div id="alert-container"></div>
+      
+      <div class="text-center" style="margin-top: 30px;">
+        <a href="game.html" class="btn btn-primary">Play Now</a>
+        <a href="leaderboard.html" class="btn btn-secondary">View Leaderboard</a>
+      </div>
+      
+      <div style="margin-top: 50px;">
+        <h3>How to Play</h3>
+        <ol>
+          <li>The game is played on a 3x3 grid.</li>
+          <li>You are X, your opponent is O.</li>
+          <li>Players take turns putting their marks in empty squares.</li>
+          <li>The first player to get 3 of their marks in a row (horizontally, vertically, or diagonally) wins.</li>
+          <li>When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a draw.</li>
+        </ol>
+      </div>
+      
+      <div style="margin-top: 30px;">
+        <h3>Features</h3>
+        <ul>
+          <li>Play against the computer or another player</li>
+          <li>Track your game history</li>
+          <li>Compete on the leaderboard</li>
+          <li>Secure account with login/registration</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>

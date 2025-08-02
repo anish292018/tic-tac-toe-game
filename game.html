@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic Tac Toe - Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <h1>Tic Tac Toe</h1>
+        <ul id="auth-links">
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+        </ul>
+        <ul id="user-links" style="display: none;">
+          <li><a href="game.html">Play Game</a></li>
+          <li><a href="leaderboard.html">Leaderboard</a></li>
+          <li><a href="history.html">My History</a></li>
+          <li><span id="user-display"></span></li>
+          <li><a href="#" id="logout-btn">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="game-container">
+      <div class="card">
+        <h2 class="text-center">Tic Tac Toe</h2>
+        
+        <div id="alert-container"></div>
+        
+        <div class="form-group">
+          <label for="opponent-select">Select Opponent</label>
+          <select id="opponent-select" class="form-control">
+            <option value="computer" selected>Computer</option>
+            <option value="player">Another Player (Local)</option>
+          </select>
+        </div>
+        
+        <div class="game-info">
+          <div>
+            <p>You (X): <span id="player-x-score">0</span></p>
+          </div>
+          <div>
+            <p>Opponent (O): <span id="player-o-score">0</span></p>
+          </div>
+        </div>
+        
+        <div id="game-status" class="game-status">Current Player: You (X)</div>
+        
+        <div id="game-board" class="game-board">
+          <!-- Game cells will be added here by JavaScript -->
+        </div>
+        
+        <div class="game-controls">
+          <button id="reset-btn" class="btn btn-primary">Reset Game</button>
+          <a href="history.html" class="btn btn-secondary">View History</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
